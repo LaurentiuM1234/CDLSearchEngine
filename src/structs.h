@@ -12,6 +12,8 @@
 #define FOUND 1
 #define NOT_FOUND 0
 #define TOKENS " {}[]();:\",.'-"
+#define QUERRY_SIZE 100
+#define PATH_SIZE 100
 
 
 #pragma pack(1)

@@ -230,23 +230,36 @@ char *getMatchesString(int *result_array, int array_size, TDirectory *dir)
 char *taskSolver(char *querry_string, char *dir_path)
 {
     int entry_num = getDirSize(dir_path);
-    TDirectory *dir = allocDirectory(entry_num, 50, dir_path);
+
+	if(entry_num == 0)
+	{
+		fprintf(stderr, "No .txt files detected or dir is empty!\n");
+		exit(EXIT_FAILURE);
+	}
+
+    TDirectory *dir = allocDirectory(entry_num, PATH_SIZE, dir_path);
     setEntries(dir);
     
-
-    char *querry_string_copy = calloc(100, sizeof(char));
-    snprintf(querry_string_copy, 100, "%s", querry_string);
-    
+    char *querry_string_copy = calloc(QUERRY_SIZE, sizeof(char));
+    snprintf(querry_string_copy, QUERRY_SIZE, "%s", querry_string);
     int querry_size = getTokenNumber(querry_string_copy);
-    TToken *querry = allocQuerry(querry_size, entry_num);
-    setQuerry(querry_string, querry, querry_size, dir);
+
+	if(querry_size == 0)
+	{
+		fprintf(stderr, "Querry cannot be empty!\n");
+		exit(EXIT_FAILURE);
+	}
+	
+	TToken *querry = allocQuerry(querry_size, entry_num);
+   	setQuerry(querry_string, querry, querry_size, dir);
     
     TQueue *rpn_queue;
     rpn_queue = getRPNForm(querry, querry_size);
-    
+    	
     int *result;
     result = getExprResult(rpn_queue);
-    return getMatchesString(result, entry_num, dir);
+	return getMatchesString(result, entry_num, dir);
+	
 }
 
 void readQuerryString(char *querry_string)
