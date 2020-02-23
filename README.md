@@ -22,7 +22,7 @@ sudo ./run_me.sh
 
 (Also, make sure the script is executable!)
 
-After making sure **libgtk-3-dev** and **pkg-config** were installed, you have to make sure that the **make** command is available on your system. If it is, you can open
+After making sure **libgtk-3-dev** and **pkg-config** were installed, you have to make sure that  **make** and **gcc** are available on your system. If they are, you can open
 the **src** directory in **CDLSearchEngine(in CLI, of course)** and build the executable:
 
 ```
