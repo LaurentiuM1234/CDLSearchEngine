@@ -96,6 +96,35 @@ If you want to look for words separated by "-" for example you have to use the f
 ```
 open && source
 ```
+(Also, if you type in the letter 'c', for example, the search results won't show anything unless the letter is separated by one of the aforementioned separators)
+
+e.g:
+
+Querry:
+```
+c
+```
+File:
+
+```
+The C programming language....
+```
+
+The results will show this file because 'C' is separated by whitespaces.
+
+
+Querry:
+```
+c
+```
+File:
+
+```
+Coconuts are not actually coconuts
+```
+
+The results will not show this file because 'C' is not separated by one of the separators aforementioned.
+
    **11)!!! MOST IMPORTANTLY DO NOT PRESS THE SEARCH BUTTON AFTER TYPING IN THE INPUT DIRECTORY( ONLY PRESS IT AFTER YOU ENTER THE QUERRY ). THERE'S NO NEED TO TYPE IN THE INPUT DIRECTORY AGAIN AFTER SEARCHING FOR THE FIRST QUERRY UNLESS YOU WANT TO CHANGE IT !!!**
    
 ## Built with
