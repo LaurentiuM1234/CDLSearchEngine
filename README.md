@@ -121,7 +121,7 @@ Special thanks go to:
 
 ->Glade 
 
-->Ora de SD de la CB for helping me understand how to implement generic stacks and queues
+->Ora de SD de la CB for helping me understand how to implement generic stacks and queuesFr
 
-
+For additional information or possible bugs contact me at: **laurentiumihalcea111@gmail.com**
 
