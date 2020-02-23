@@ -160,7 +160,7 @@ int *getExprResult(TQueue *output_queue)
         exit(EXIT_FAILURE);
     }
     
-    TStack *aux_stack = createStack(file_num * sizeof(int), file_num);
+    TStack *aux_stack = createStack(file_num * sizeof(int), STACK_SIZE);
     
     while(!QUEUE_EMPTY(output_queue))
     {

@@ -14,6 +14,7 @@
 #define TOKENS " {}[]();:\",.'-"
 #define QUERRY_SIZE 100
 #define PATH_SIZE 100
+#define STACK_SIZE 20
 
 
 #pragma pack(1)
