@@ -97,4 +97,29 @@ If you want to look for words separated by "-" for example you have to use the f
 open && source
 ```
    **11)!!! MOST IMPORTANTLY DO NOT PRESS THE SEARCH BUTTON AFTER TYPING IN THE INPUT DIRECTORY( ONLY PRESS IT AFTER YOU ENTER THE QUERRY ). THERE'S NO NEED TO TYPE IN THE INPUT DIRECTORY AGAIN AFTER SEARCHING FOR THE FIRST QUERRY UNLESS YOU WANT TO CHANGE IT !!!**
+   
+## Built with
+-> GTK+3.0
+
+-> The C programming language
+
+## Author
+
+Mihalcea Laurentiu-Cristian
+
+## Acknowledgments
+
+Special thanks go to:
+
+->Dorin@CDL
+
+->Stack overflow
+
+->@Dijkstra for inventing the shunting-yard algorithm
+
+->GTK+3.0 reference page for the function definitions
+
+->Glade 
+
+
 
