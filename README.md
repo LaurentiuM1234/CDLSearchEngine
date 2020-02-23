@@ -86,7 +86,7 @@ preferably using the delete arrow in the right side of the search box( the delet
   
   **9) You can have up to 20 tokens in a querry(operators included)**
   
-  **10) The word separators in .txt files are the following: ",.;:()[]- \"'" , so, as a consequence you can't look for sequences such as :**
+  **10) The word separators in .txt files are the following: ",.;:()'[]- \"?!" , so, as a consequence you can't look for sequences such as :**
   
 ```
 open-source OR example,
