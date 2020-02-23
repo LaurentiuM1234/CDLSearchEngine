@@ -80,9 +80,21 @@ preferably using the delete arrow in the right side of the search box( the delet
   
   **6) The app uses a lot of resources since it doesn't dealloc some of the resources it uses**
   
-  **7) Trying to modify the querry in the querry search bar will lead to some weird output in the console( due to the library used for the GUI). That's why it's recommended the delete the previous querry not modify it.**
+  **7) Trying to modify the querry in the querry search bar will lead to some weird output in the console( due to the library used for the GUI). That's why it's recommended to delete the previous querry not modify it.**
   
   **8) Any unsuccesful file openings or allocs will lead to the program closing. (intentional)**
   
   **9) You can have up to 20 tokens in a querry(operators included)**
+  
+  **10) The word separators in .txt files are the following: ",.;:()[]- \"'" , so, as a consequence you can't look for sequences such as :**
+  
+```
+open-source OR example,
+```
+If you want to look for words separated by "-" for example you have to use the following querry:
+
+```
+open && source
+```
+
 
