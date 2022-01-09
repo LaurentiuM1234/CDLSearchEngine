@@ -135,22 +135,3 @@ The results will not show this file because 'C' is not separated by one of the s
 ## Author
 
 Mihalcea Laurentiu-Cristian
-
-## Acknowledgments
-
-Special thanks go to:
-
-->Dorin@CDL
-
-->Stack overflow
-
-->@Dijkstra for inventing the shunting-yard algorithm
-
-->GTK+3.0 reference page for the function definitions
-
-->Glade 
-
-->Ora de SD de la CB for helping me understand how to implement generic stacks and queues
-
-For additional information or possible bugs contact me at: **laurentiumihalcea111@gmail.com**
-
